@@ -15,7 +15,7 @@ describe('Buscar fotos e dados', ()=> {
     })
 
 
-    it('fazer login do flavio', ()=> {
+    it('fazer login do Ariane', ()=> {
         cy.request({
             method: 'POST',
             url: 'https://apialurapic.herokuapp.com/user/login',
@@ -24,9 +24,9 @@ describe('Buscar fotos e dados', ()=> {
            expect(res.status).to.be.equal(200)
            expect(res.body).is.not.empty
            expect(res.body).to.have.property('id')
-           expect(res.body.id).to.be.equal(1) 
+           expect(res.body.id).to.be.equal(7) 
            expect(res.body).to.have.property('email')
-           expect(res.body.email).to.be.equal("flavio@alurapic.com.br") 
+           expect(res.body.email).to.be.equal("arianemadureira@live.com") 
         }
 
         )
