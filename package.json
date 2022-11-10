@@ -9,7 +9,8 @@
   "author": "Ariane Madureira",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^10.11.0"
+    "cypress": "^10.11.0",
+    "cypress-mochawesome-reporter": "^3.2.3"
   },
   "devDependencies": {
     "mochawesome": "^7.1.3"
