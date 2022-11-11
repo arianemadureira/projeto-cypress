@@ -16,5 +16,11 @@
       "fullName": "Anakin Skywalker",
       "userName": "anakin",
       "password": "darthvader"
+    },
+    {
+      "email": "arianemadureira@live.com",
+      "fullName": "Ariane Madureira",
+      "userName": "arianemadureira ",
+      "password": "12345678"
     }
   ]

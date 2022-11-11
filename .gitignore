@@ -104,3 +104,6 @@ dist
 .tern-port
 
 cypress.env.json
+screenshots/
+mochawesome-report/
+videos/
