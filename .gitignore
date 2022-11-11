@@ -107,3 +107,4 @@ cypress.env.json
 screenshots/
 mochawesome-report/
 videos/
+*.mp4
