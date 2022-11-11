@@ -108,3 +108,4 @@ screenshots/
 mochawesome-report/
 videos/
 *.mp4
+node_modules/
