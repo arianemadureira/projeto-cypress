@@ -15,7 +15,7 @@ jobs:
 
       # https://github.com/cypress-io/github-action
       - name: Cypress run 🚀
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v4.2.0
         with:
           spec: cypress/e2e/alura-pic/*.js
 
