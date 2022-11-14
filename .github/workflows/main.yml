@@ -1,17 +1,28 @@
-name: End-to-end tests
+name: Cypress Tests with Dependency and Artifact Caching
+
 on: [push]
 
-env:
-  userName: arianemadureira
-  password: 12345678
-  
 jobs:
+  # install:
+  # ....
   cypress-run:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
+    container: cypress/browsers:node12.18.3-chrome87-ff82
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Download the build folders
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+          path: build
+
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v4.x.x # use the explicit version number
+        with:
+          # Specify Browser since container image is compile with Firefox
+          browser: firefox
+          build: yarn build
