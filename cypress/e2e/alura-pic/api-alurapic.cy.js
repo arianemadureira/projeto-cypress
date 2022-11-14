@@ -19,7 +19,7 @@ describe('Buscar fotos e dados', ()=> {
     })
 
 
-    it('fazer login da Ariane', ()=> {
+    it.skip('fazer login da Ariane', ()=> {
         cy.request({
             method: 'POST',
             url: 'https://apialurapic.herokuapp.com/user/login',
