@@ -109,3 +109,5 @@ mochawesome-report/
 videos/
 *.mp4
 node_modules/
+cypress/videos/alurapic.cy.js.mp4
+*.mp4

@@ -13,9 +13,7 @@ describe('Buscar fotos e dados', ()=> {
            expect(res.body[0]).to.have.property('description')
            expect(res.body[0].description).to.be.equal('Farol iluminado') 
            //expect(res.duration).to.be.lte(tempoEsperado)
-        }
-
-        )
+        })
     })
 
 
@@ -31,9 +29,7 @@ describe('Buscar fotos e dados', ()=> {
           // expect(res.body.id).to.be.equal(1) 
            expect(res.body).to.have.property('email')
            expect(res.body.email).to.be.equal("arianemadureira@live.com") 
-        }
-
-        )
+        })
     })
 
 })
